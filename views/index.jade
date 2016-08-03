@@ -1,5 +1,68 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  // about
+  section#section-projects.appear.clearfix
+    .container.page-container
+      .row
+        .col-md-4.page-header-padding
+          .page-header
+            a(href='/') E N I C A
+          nav.cl-effect-1
+            .menu-item.alpha
+              h4
+                a(href='/') Home
+            .menu-item
+              h4
+                a(href='projects.html') Projects
+              ul
+                li
+                  a(href='project1') Project 1
+                li
+                  a(href='project2') Project 2
+                li
+                  a(href='project3') Project 3
+            .menu-item
+              h4
+                a(href='concept.html') Concept Art
+              ul
+                li
+                  a(href='#') Concept Art 1
+                li
+                  a(href='#') Concept Art 2
+                li
+                  a(href='#') Concept Art 3
+            .menu-item
+              h4
+                a(href='about.html') About
+            .menu-item
+              h4
+                a(href='contact.html') Contact
+        .col-md-6
+          .section-header
+            h2.section-heading.animated(data-animation='bounceInUp') H O M E
+          ul.rig.columns-3
+            li
+              img(src='images/portfolio/img4.jpg')
+              h3 Image Title
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+            li
+              img(src='images/portfolio/img8.jpg')
+              h3 Image Title
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+            li
+              img(src='images/portfolio/img1.jpg')
+              h3 Image Title
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+            li
+              img(src='images/portfolio/img5.jpg')
+              h3 Image Title
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+            li
+              img(src='images/portfolio/img6.jpg')
+              h3 Image Title
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+            li
+              img(src='images/portfolio/img8.jpg')
+              h3 Image Title
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
