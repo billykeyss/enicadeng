@@ -7,7 +7,12 @@ body, h5 {
   margin: 0;
 }
 body {
-  font: 16px/1 sans-serif
+  font: 16px/1 sans-serif;
+  font-weight: 300;
+  color: #000000;
+  background: #ffffff;
+  text-shadow: none;
+  margin: 0px 20px 0px 20px;
 }
 
 ul.rig {
@@ -118,10 +123,6 @@ ul.rig.columns-4 li {
 }
 
 /*li Styles*/
-
-.menu-item li {
-  border-bottom: 1px solid #eee;
-}
 .menu-item li:hover {
   background: #fff;
 }
@@ -148,6 +149,7 @@ ul.rig.columns-4 li {
   list-style-type: none;
   overflow: hidden;
   padding: 0px;
+  margin-left:-30px;
   /*Animation*/
   -webkit-transition: height 1s ease;
   -moz-transition: height 1s ease;
@@ -158,10 +160,6 @@ ul.rig.columns-4 li {
 .menu-item:hover ul {
   height: 200px;
 }
-
-body {
-  font-weight: 300
-}
 .page-container {
   margin-top: 125px;
   width: 90vw;
@@ -170,19 +168,13 @@ ul {
   list-style-type: none;
 }
 .page-header {
-  font-weight: 800;
   font-size: 60px;
   white-space: nowrap;
   margin: 20px;
+  border-bottom: none !important;
 }
 .navbar, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block
-}
-body {
-  color: #000000;
-  background: #ffffff;
-  line-height: 1.6em;
-  text-shadow: none
 }
 .clear {
   clear: both
@@ -221,8 +213,10 @@ a:hover {
 }
 .nav>li>a, .section-header h2.section-heading {
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 60px;
+  font-weight: 300;
+  font-size: 70px;
+  color: #87CEFA;
+  white-space: nowrap;
 }
 .container, .content {
   overflow: hidden
@@ -505,4 +499,21 @@ a.socialIcon:hover {
   section.featured {
     padding-top: 80px
   }
+}
+
+@media (max-width:980px) {
+    .page-header-padding {
+        text-align:center;
+    }
+    .page-header {
+        margin-left: 80px;
+    }
+    .menu-item {
+        width: 640px; /*can be in percentage also.*/
+        height: auto;
+        margin-left: 36%;
+    }
+    .menu-item ul {
+        margin-left:-30px;
+    }
 }
