@@ -168,7 +168,7 @@ ul {
   list-style-type: none;
 }
 .page-header {
-    color:  #66CCFF;
+  color:  #66CCFF;
   font-size: 60px;
   white-space: nowrap;
   border-bottom: none !important;
@@ -535,4 +535,20 @@ a.socialIcon:hover {
 .sliding-middle-out:hover:after {
 	width: 100%;
 	background: #1aa3a3;
+}
+
+.image img {
+    -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -ms-transition: all 0.5s ease; /* IE 9 */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease;
+}
+
+.image:hover img {
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -moz-transform:scale(1.5); /* Firefox */
+    -ms-transform:scale(1.5); /* IE 9 */
+    -o-transform:scale(1.5); /* Opera */
+     transform:scale(1.5);
 }
