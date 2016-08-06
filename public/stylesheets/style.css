@@ -9,7 +9,7 @@ body, h5 {
 body {
   font: 16px/1 sans-serif;
   font-weight: 300;
-  color: #000000;
+  color: #0099CC;
   background: #ffffff;
   text-shadow: none;
   margin: 0px 20px 0px 20px;
@@ -88,7 +88,7 @@ ul.rig.columns-4 li {
   margin: 0px;
 }
 .menu-item h4 a {
-  color: #000;
+  color: #0099CC;
   display: block;
   text-decoration: none;
   width: 200px;
@@ -168,9 +168,9 @@ ul {
   list-style-type: none;
 }
 .page-header {
+    color:  #66CCFF;
   font-size: 60px;
   white-space: nowrap;
-  margin: 20px;
   border-bottom: none !important;
 }
 .navbar, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -505,9 +505,6 @@ a.socialIcon:hover {
     .page-header-padding {
         text-align:center;
     }
-    .page-header {
-        margin-left: 80px;
-    }
     .menu-item {
         width: 640px; /*can be in percentage also.*/
         height: auto;
@@ -516,4 +513,26 @@ a.socialIcon:hover {
     .menu-item ul {
         margin-left:-30px;
     }
+    .section-heading {
+        margin-top: 50px;
+    }
+}
+
+.sliding-middle-out {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width 1.5s ease, background-color 1.5s ease;
+}
+.sliding-middle-out:hover:after {
+	width: 100%;
+	background: #1aa3a3;
 }
